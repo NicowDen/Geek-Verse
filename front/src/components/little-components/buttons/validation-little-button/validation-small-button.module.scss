@@ -1,0 +1,26 @@
+.button {
+  justify-content: flex-end;
+  background-color: var(--linear2);
+  border-radius: var(--border-radius-big);
+  display: flex;
+  justify-content: center;
+  max-width: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  @media (max-width: 480px) {
+    // right: -40px;
+  }
+  i {
+    color: var(--linear1);
+    font-size: 24px;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+}
+
+.button:hover {
+  background-color: var(--linear1);
+  i {
+    color: var(--linear2);
+  }
+}

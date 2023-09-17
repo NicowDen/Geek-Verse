@@ -1,0 +1,71 @@
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+}
+.settings_menu_container {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  position: absolute;
+  background-color: var(--second-color);
+  top: 50px;
+  right: 15px;
+  min-width: 200px;
+  box-shadow: 0px 0px 0px 8px var(--border-settings-menu);
+  border-top-left-radius: var(--border-radius-big);
+  border-bottom-left-radius: var(--border-radius-big);
+  padding: 16px;
+  transition: transform 0.3s;
+  transform-origin: right top;
+  ul {
+    z-index: 1;
+    color: var(--linear1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    font-weight: 600;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.settings_menu_hide {
+  transform: scale(0);
+}
+
+.settings_menu_container::after {
+  content: "";
+  position: absolute;
+  background: var(--second-color);
+  inset: 2px;
+  border-top-left-radius: var(--border-radius-big);
+  border-bottom-left-radius: var(--border-radius-big);
+}
+
+.settings_menu_container::before {
+  // z-index: 3;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: var(--linearFull);
+  transition: all 0.2s linear;
+}
+
+.settings_menu_container:hover:before {
+  width: 60px;
+  height: 270px;
+  animation: rotBGimg 4s linear infinite;
+  background-image: var(--linearFullHover);
+}

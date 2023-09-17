@@ -1,0 +1,65 @@
+@keyframes growUp {
+  0% {
+    width: 20%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.button {
+  position: relative;
+  color: white;
+  height: 40px;
+  width: 180px;
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  border: none;
+  border-radius: var(--border-radius-big);
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+  span {
+    z-index: 1;
+    color: white;
+    font-size: var(--font-little);
+    font-weight: 800;
+  }
+}
+.button::after {
+  content: "";
+  position: absolute;
+  background: var(--second-color);
+  inset: 2px;
+  border-radius: var(--border-radius-big);
+}
+.button:before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: var(--linearFull);
+}
+.button:hover::before {
+  z-index: 1;
+  background-image: var(--linearFull);
+  animation: growUp 0.4s;
+  border-radius: var(--border-radius-big);
+}
+.button:hover {
+  background-image: var(--linearFull);
+}
+.button:hover span {
+  color: var(--second-color);
+}
+.button:active {
+  scale: 110%;
+  animation: none;
+}
+.button:active::before {
+  width: 100%;
+}

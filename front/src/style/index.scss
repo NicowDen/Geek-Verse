@@ -1,0 +1,10 @@
+@use "./reseter";
+@use "./variables";
+@use "./themes";
+@use "./icons";
+@use "./fonts";
+@use "./global";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/form/_all.sass";
+@import "bulma/sass/components/tabs.sass";

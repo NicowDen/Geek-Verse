@@ -1,0 +1,88 @@
+.pinkBlue {
+  --first-color: rgb(26, 26, 70, 1);
+  --second-color: rgb(7, 24, 46);
+  --linear1: rgb(0, 183, 255);
+  --linear2: rgb(255, 48, 255);
+  --background-color: linear-gradient(
+    344deg,
+    var(--second-color) 0%,
+    var(--first-color) 50%
+  );
+  --linearFull: linear-gradient(180deg, var(--linear1), var(--linear2));
+  --linearFullReverse: linear-gradient(180deg, var(--linear2), var(--linear1));
+  --linearFullHover: linear-gradient(
+    0deg,
+    var(--linear1) 50%,
+    var(--linear2) 50%
+  );
+  --border-radius-big: 15px;
+  --border-radius-little: 8px;
+  --border-settings-menu: var(--first-color);
+  --slider-title-background: rgba(7, 24, 46, 0.6);
+}
+
+.redWhite {
+  --first-color: rgb(116, 8, 8);
+  --second-color: rgb(26, 26, 26);
+  --linear1: rgb(215, 8, 8);
+  --linear2: white;
+  --linearFull: linear-gradient(180deg, var(--linear1), var(--linear2));
+  --linearFullReverse: linear-gradient(180deg, var(--linear2), var(--linear1));
+  --linearFullHover: linear-gradient(
+    0deg,
+    var(--linear1) 50%,
+    var(--linear2) 50%
+  );
+  --background-color: linear-gradient(
+    344deg,
+    var(--second-color) 0%,
+    var(--first-color) 50%
+  );
+  --border-radius-big: 15px;
+  --border-radius-little: 8px;
+  --border-settings-menu: var(--first-color);
+}
+
+.blackGold {
+  --first-color: rgb(35, 35, 35);
+  --second-color: rgb(26, 26, 26);
+  --linear1: rgb(255, 215, 0);
+  --linear2: rgb(255, 215, 0);
+  --linearFull: linear-gradient(180deg, var(--linear1), var(--linear2));
+  --linearFullReverse: linear-gradient(180deg, var(--linear2), var(--linear1));
+  --linearFullHover: linear-gradient(
+    0deg,
+    var(--linear1) 50%,
+    var(--linear2) 50%
+  );
+  --background-color: linear-gradient(
+    344deg,
+    var(--second-color) 0%,
+    var(--first-color) 50%
+  );
+  --border-radius-big: 15px;
+  --border-radius-little: 8px;
+  --border-settings-menu: var(--first-color);
+}
+
+.vintage {
+  --first-color: rgb(24, 24, 24);
+  --second-color: rgb(46, 46, 46);
+  --linear1: rgb(197, 197, 197);
+  --linear2: rgb(197, 197, 197);
+  --linearFull: linear-gradient(180deg, var(--linear1), var(--linear2));
+  --linearFullReverse: linear-gradient(180deg, var(--linear2), var(--linear1));
+  --linearFullHover: linear-gradient(
+    0deg,
+    var(--linear1) 50%,
+    var(--linear2) 50%
+  );
+  --background-color: linear-gradient(
+    344deg,
+    var(--first-color) 0%,
+    var(--first-color) 50%
+  );
+  --border-radius-big: 0px;
+  --border-radius-little: 0px;
+  --border-settings-menu: var(--first-color);
+}

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  .input {
+    position: relative;
+  }
+  .input::after {
+    content: "\e9eb";
+    position: absolute;
+    font-family: "icomoon";
+    font-size: var(--i-font-big);
+    transform: scaleX(-1);
+    color: var(--linear2);
+    right: -25px;
+    top: 0;
+  }
+}

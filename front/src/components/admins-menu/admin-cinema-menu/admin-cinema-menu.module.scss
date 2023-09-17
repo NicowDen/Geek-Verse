@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  .top {
+    flex: 1 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+    min-width: 100%;
+    @media (max-width: 779px) {
+      flex-direction: column;
+      gap: 32px;
+      padding: 8px;
+    }
+    .inputs_block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1 0;
+      justify-content: center;
+      @media (max-width: 779px) {
+        align-items: center;
+      }
+    }
+    .preview {
+      flex: 4 0;
+      position: relative;
+    }
+  }
+
+  .send_button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 100%;
+    .error {
+      position: absolute;
+      top: -30px;
+      font-weight: 600;
+      font-size: var(--font-little);
+    }
+  }
+}

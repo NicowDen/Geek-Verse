@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: calc(100vh - var(--nav-height));
+  max-height: calc(100vh - var(--nav-height));
+  position: relative;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  overflow: auto;
+  @media (max-width: 779px) {
+    gap: 16px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 16px 0;
+  }
+  .selection_bar_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 200px;
+    & * {
+      color: var(--linear1);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .select {
+      background-color: var(--second-color);
+      border-top-right-radius: var(--border-radius-big);
+      border-top-left-radius: var(--border-radius-big);
+      padding: 8px;
+      font-size: var(--font-very-little);
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--linear2);
+      justify-content: center;
+      transition: 0.1s;
+      & > * {
+        font-size: var(--font-very-little);
+      }
+      & button {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .select_close {
+      border-radius: var(--border-radius-big);
+      transition: 1.5s;
+    }
+    .options {
+      z-index: 1;
+      min-width: 100%;
+      position: absolute;
+      bottom: -100px;
+      border: 1px solid var(--linear2);
+      display: flex;
+      flex-direction: column;
+      min-height: 100px;
+      border-bottom-right-radius: var(--border-radius-big);
+      border-bottom-left-radius: var(--border-radius-big);
+      justify-content: space-between;
+      padding: 8px;
+      background-color: var(--second-color);
+      transition: transform 0.5s;
+      transform-origin: top center;
+      & button {
+        cursor: pointer;
+        transition: transform 0.3s;
+        flex: 1 0;
+        border: none;
+        background-color: transparent;
+        font-size: var(--font-very-little);
+      }
+      & button:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .options_open {
+    transform: scaleY(0);
+  }
+
+  .preview {
+    min-width: 100%;
+    flex: 1 0;
+    display: flex;
+    @media (max-width: 779px) {
+    }
+  }
+}
+
+.container::-webkit-scrollbar {
+  height: 12px;
+  width: 2px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--linear2);
+}
+
+.container::-webkit-scrollbar-corner {
+  background: var(--linear2);
+}

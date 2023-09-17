@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  background-color: var(--linear2);
+  display: flex;
+  justify-content: center;
+  .categories {
+    min-width: 20%;
+  }
+  .separator {
+    min-width: 2px;
+    background-color: var(--second-color);
+    top: 0;
+    left: 0;
+  }
+}
+
+.smallWindowCategories {
+  max-width: 200px;
+}

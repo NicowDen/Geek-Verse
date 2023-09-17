@@ -1,0 +1,42 @@
+:root {
+  --nav-header-height: 80px;
+  --nav-category-height: 30px;
+  --nav-height: 110px;
+  --small-size: 200px;
+  --border-radius-big: 15px;
+  --border-radius-little: 8px;
+  /*==========themeColors==========*/
+  --linear1: rgb(0, 183, 255);
+  --linear2: rgb(255, 48, 255);
+  --first-color: rgb(26, 26, 70);
+  --second-color: rgb(7, 24, 46);
+
+  /*==========themeColors==========*/
+  --background-color: linear-gradient(
+    344deg,
+    var(--second-color) 0%,
+    var(--first-color) 50%
+  );
+  --linearFull: linear-gradient(180deg, var(--linear1), var(--linear2));
+  --linearFullReverse: linear-gradient(180deg, var(--linear2), var(--linear1));
+  --linearFullHover: linear-gradient(
+    0deg,
+    var(--linear1) 50%,
+    var(--linear2) 50%
+  );
+  --modal-background: rgba(26, 26, 26, 0.6);
+  --border-settings-menu: var(--first-color);
+  --gap-main-ul: 82px;
+  --slider-title-background: rgba(7, 24, 46, 0.6);
+  /*==========responsive==========*/
+  --mobile: 480px;
+  --tablet: 801px;
+  /*==========Icons Fonts-Size==========*/
+  --i-font-big: 1.7rem;
+  --i-font-little: 1.4rem;
+  /*==========Fonts-Size==========*/
+  --font-big: 3rem;
+  --font-medium: 1.5rem;
+  --font-little: 1.2rem;
+  --font-very-little: 1rem;
+}

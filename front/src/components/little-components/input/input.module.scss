@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  input[type="file"] {
+    display: none;
+  }
+  .input_file_div {
+    background-color: var(--background-color);
+    border: 1px solid var(--linear2);
+    border-radius: var(--border-radius-big);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    min-width: 200px;
+    cursor: pointer;
+    i {
+      font-size: 24px;
+    }
+    span {
+      display: flex;
+      background-color: var(--linear2);
+      color: var(--second-color);
+      font-size: 16px;
+      font-weight: 800;
+      min-height: 30px;
+      align-items: center;
+      padding: 4px;
+      border-radius: var(--border-radius-big);
+    }
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 50%;
+  }
+  input[type="date"]::-webkit-datetime-edit {
+    opacity: 50%;
+  }
+  textarea {
+    background-color: var(--background-color);
+    border-color: var(--linear2);
+    color: white;
+    min-height: 150px;
+  }
+  textarea:focus {
+    border-color: var(--linear2);
+    outline: none;
+  }
+  textarea::-webkit-scrollbar {
+    height: 12px;
+    width: 3px;
+    background-image: var(--second);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background: var(--second-color);
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px var(--linear2);
+    background-color: var(--linear2);
+  }
+
+  textarea::-webkit-scrollbar-corner {
+    background: var(--linear2);
+  }
+}
+
+.label {
+  font-style: italic;
+  opacity: 50%;
+  max-width: 100%;
+  border-radius: 20px;
+  transition: all 0.3s;
+  pointer-events: none;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.label_left {
+  left: 20px;
+}
+
+.label_center {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.labelUp {
+  opacity: 100%;
+  top: 0;
+  font-size: 12px;
+  font-weight: 200;
+  z-index: 1;
+  background-color: var(--first-color);
+}
+
+.input {
+  position: inherit;
+  padding-inline: 12px;
+  background-color: var(--background-color);
+  border-color: var(--linear2);
+  color: white;
+  flex: 1 0;
+  height: 30px;
+  border-radius: var(--border-radius-big);
+  max-width: 200px;
+  min-width: 200px;
+  caret-color: var(--linear2) !important;
+}
+.input:focus {
+  border-color: var(--linear1);
+}

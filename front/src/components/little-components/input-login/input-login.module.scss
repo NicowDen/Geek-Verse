@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+}
+
+.input {
+  padding: 5px;
+  border-radius: var(--border-radius-big);
+  border: 2px solid var(--linear1);
+  background-color: var(--second-color);
+  color: white;
+  caret-color: var(--linear2);
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+.input:active {
+  border: 2px solid var(--linear2);
+}
+
+.label {
+  font-style: italic;
+  opacity: 50%;
+  font-size: 15px;
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  background-color: var(--second-color);
+  border-radius: 20px;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.labelUp {
+  opacity: 100%;
+  top: 0;
+  font-size: 12px;
+  font-weight: 200;
+}

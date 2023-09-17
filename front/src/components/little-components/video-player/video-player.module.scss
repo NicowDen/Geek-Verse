@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  background-color: black;
+  padding: 8px;
+  border-radius: var(--border-radius-big);
+  .loader_container {
+    min-width: 200px;
+    min-height: 10px;
+    background-color: var(--first-color);
+    border-radius: var(--border-radius-little);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .loader {
+      min-height: 100%;
+      background-image: var(--linearFull);
+      position: absolute;
+      border-radius: var(--border-radius-little);
+    }
+  }
+  .player_wrapper {
+    min-width: 100%;
+  }
+}

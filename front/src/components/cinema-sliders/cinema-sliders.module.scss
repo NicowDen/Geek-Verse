@@ -1,0 +1,51 @@
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.container {
+  min-height: calc(100vh - var(--nav-height));
+  max-height: calc(100vh - var(--nav-height));
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+  .search_bar {
+  }
+  .sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    > * {
+      // border: 4px solid var(--linear1);
+      // border-radius: var(--border-radius-big);
+    }
+  }
+}
+
+.container::-webkit-scrollbar {
+  height: 12px;
+  width: 2px;
+  background-image: var(--second);
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--second-color);
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px var(--linear2);
+  background-image: linear-gradient(180deg, var(--linear1), var(--linear2));
+}
+
+.container::-webkit-scrollbar-corner {
+  background: var(--linear2);
+}

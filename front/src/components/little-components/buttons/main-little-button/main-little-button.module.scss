@@ -1,0 +1,18 @@
+.button {
+  background-color: transparent;
+  border: none;
+  color: var(--linear1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  position: relative;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: scale 0.3s;
+  & > * {
+    // color: var(--first-color);
+  }
+}
+.button_active:hover {
+  scale: 1.1;
+  color: var(--linear2);
+}
