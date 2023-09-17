@@ -1,0 +1,2 @@
+21/1/2023 at 15:55:9 - user.dao -> create : E11000 duplicate key error collection: geek-verse.users index: pseudo_1 dup key: { pseudo: "nico" }
+null
